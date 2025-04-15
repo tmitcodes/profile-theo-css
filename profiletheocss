@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profil Theo Maranatha Immanuel</title>
+  <style>
+    :root {
+      --primary: #007bff;
+      --secondary: #f1f1f1;
+      --text-dark: #222;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f0f4f8;
+      color: var(--text-dark);
+    }
+
+    header {
+      background: var(--primary);
+      padding: 1rem;
+      color: white;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      padding: 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 2rem;
+      align-items: center;
+      background-color: white;
+    }
+
+    .hero-text h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-text p {
+      font-size: 1.1rem;
+    }
+
+    .hero-image img {
+      max-width: 100%;
+      border-radius: 1rem;
+    }
+
+    section {
+      padding: 2rem;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+
+    .box {
+      background: var(--secondary);
+      padding: 1rem;
+      border-radius: 0.5rem;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    footer {
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    @media screen and (max-width: 768px) {
+      .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#biodata">Biodata</a></li>
+        <li><a href="#portofolio">Portofolio</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Selamat Datang di Website Saya</h1>
+      <p>Ini adalah profil saya. Kenalan lebih dekat yuk!</p>
+    </div>
+    <div class="hero-image">
+      <img src="WhatsApp Image 2025-04-07 at 14.36.31_de5b976b.jpg" alt="Foto Profil Theo" />
+    </div>
+  </section>
+
+  <section id="biodata">
+    <h2>About Me</h2>
+    <div class="grid-container">
+      <div class="box">Nama: Theo Maranatha Immanuel</div>
+      <div class="box">Umur: 35 Tahun</div>
+      <div class="box">Profesi: Web Developer</div>
+      <div class="box">Email: theomaranathatambunan@gmail.com</div>
+      <div class="box">Lokasi: Jakarta</div>
+      <div class="box">Hobi: Coding, Musik</div>
+    </div>
+  </section>
+
+  <section id="portofolio">
+    <h2>Portofolio</h2>
+    <div class="grid-container">
+      <div class="box">Proyek 1: Website Toko Online</div>
+      <div class="box">Proyek 2: Sistem Informasi Sekolah</div>
+      <div class="box">Proyek 3: Aplikasi Android</div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Theo. All rights reserved.
+  </footer>
+</body>
+</html>
